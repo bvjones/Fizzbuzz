@@ -18,4 +18,9 @@ describe 'fizzbuzz' do
 		expect(fizzbuzz(15)).to eq 'fizzbuzz'
 		expect(fizzbuzz(30)).to eq 'fizzbuzz'
 	end
+	it 'program simply returns the given number' do
+		expect(fizzbuzz(2)).to eq 2
+		expect(fizzbuzz(8)).to eq 8
+	end
+
 end

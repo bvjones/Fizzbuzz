@@ -1,6 +1,12 @@
 def fizzbuzz(number)
-  result = ""
-  result += "fizz" if number % 3 == 0
-  result += 'buzz' if number % 5 == 0
-  result
+  case
+  when (number % 3 == 0 ) && (number % 5 != 0)
+     "fizz"
+  when (number % 5 == 0) && (number % 3 != 0)
+     "buzz"
+  when ((number % 3 == 0 ) && (number % 5 == 0))
+     "fizzbuzz"
+  else
+     number
+  end
 end
