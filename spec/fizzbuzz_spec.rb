@@ -14,5 +14,8 @@ describe 'fizzbuzz' do
 		expect(fizzbuzz(10)).to eq 'buzz'
 		expect(fizzbuzz(20)).to eq 'buzz'
 	end
-
+	it 'ignores the previous 2 rules and returns the message "Fizzbuzz" when passed a number that is a multiple of both 3 and 5' do
+		expect(fizzbuzz(15)).to eq 'fizzbuzz'
+		expect(fizzbuzz(30)).to eq 'fizzbuzz'
+	end
 end
