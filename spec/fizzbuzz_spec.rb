@@ -10,7 +10,9 @@ describe 'fizzbuzz' do
 		expect(fizzbuzz(12)).to eq 'fizz'
 	end
 	it "returns the message 'Buzz' when passed a number that is a multiple of 5." do
-		expect(fizzbuzz(5)).to eq 'Buzz'
+		expect(fizzbuzz(5)).to eq 'buzz'
+		expect(fizzbuzz(10)).to eq 'buzz'
+		expect(fizzbuzz(20)).to eq 'buzz'
 	end
 
 end
